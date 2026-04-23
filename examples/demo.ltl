@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_zip_reader
+
+import std::io
+use ltl_zip_reader as lib
+
+fn main() {
+    io::println("ltl_zip_reader demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
